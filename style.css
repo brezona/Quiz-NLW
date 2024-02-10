@@ -115,7 +115,7 @@ gap: 9px;
   display: flex;
   /*centralizou na mesma altura das opções a borda, e gap colocou um espaço entre as opções e a bolinha*/
   align-items: center;
-  gap: 8px;
+  gap: 9px;
 }
 
 
