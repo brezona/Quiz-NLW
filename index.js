@@ -1,93 +1,93 @@
 const perguntas = [
     {
-      pergunta: "Qual é a função usada para imprimir algo no console em JavaScript?",
+      pergunta: "Coelho tem quantos olhos?",
       respostas: [
-        "print()",
-        "log()",
-        "display()",
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Como você declara uma variável constante em JavaScript?",
-      respostas: [
-        "const myVar;",
-        "let myVar;",
-        "const myVar = 10;",
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "Qual é a maneira correta de comparar se duas variáveis são iguais em valor e tipo em JavaScript?",
-      respostas: [
-        "x == y;",
-        "x === y;",
-        "x = y;",
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Como você declara uma função anônima em JavaScript?",
-      respostas: [
-        "function() {}",
-        "const myFunc = function() {}",
-        "anonymousFunction() {}",
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual método JavaScript é usado para remover o último elemento de um array?",
-      respostas: [
-        "pop()",
-        "shift()",
-        "removeLast()",
+        "2",
+        "1",
+        "3",
       ],
       correta: 0
     },
     {
-      pergunta: "Qual é a maneira correta de comentar uma linha de código em JavaScript?",
+      pergunta: "Quanto é 1+2 vezes 100?",
       respostas: [
-        "// Comment",
-        "/* Comment */",
-        "<!-- Comment -->",
+        "3000",
+        "300",
+        "3100",
+      ],
+      correta: 1
+    },
+    {
+      pergunta: "A Terra é plana?",
+      respostas: [
+        "talvez",
+        "não",
+        "sim",
+      ],
+      correta: 1
+    },
+    {
+      pergunta: "Existe sapo venenoso",
+      respostas:[
+        "não",
+        "sim",
+        "só na Autrália",
+      ],
+      correta: 1
+    },
+    {
+      pergunta: "A maior árvore do mundo fica no Sol?",
+      respostas: [
+        "sim",
+        "não",
+        "não, mas fica em UYScuti",
+      ],
+      correta: 1
+    },
+    {
+      pergunta: "Cachorro pode ser rosa?",
+      respostas: [
+        "sim",
+        "não",
+        "sim/não",
       ],
       correta: 0
     },
     {
-      pergunta: "Como você seleciona um elemento do DOM pelo seu ID em JavaScript?",
+      pergunta: "Qual o nome da moeda usada no Brasil?",
       respostas: [
-        "getElementByName()",
-        "querySelector()",
-        "getElementById()",
+        "Real",
+        "Roel",
+        "Riel",
       ],
-      correta: 2
+      correta: 0
     },
     {
-      pergunta: "Qual é o operador lógico 'E' em JavaScript?",
+      pergunta: "Qual é o ponto de exclamação?",
       respostas: [
-        "&&",
-        "||",
+        ".",
+        "?",
         "!",
       ],
-      correta: 0
-    },
-    {
-      pergunta: "Qual método JavaScript é usado para adicionar um elemento ao início de um array?",
-      respostas: [
-        "append()",
-        "push()",
-        "unshift()",
-      ],
       correta: 2
     },
     {
-      pergunta: "Qual dessas opções é usada para iniciar um loop infinito em JavaScript?",
+      pergunta: "Qual a cor do Ovo?",
       respostas: [
-        "for (;;) {}",
-        "for (i=0; i<10; i++) {}",
-        "while (true) {}",
+        "tem diversas cores",
+        "marrom",
+        "branco",
       ],
       correta: 0
+    },
+    {
+      pergunta: "O que aconteceu a um dia no passado, é chamado de?",
+      respostas: [
+        "hoje",
+        "amanhã",
+        "ontem",
+      ],
+      correta: 2
     }
   ];
   
