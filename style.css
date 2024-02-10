@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*asteristico é o seletor universal, e ele pega tudo dentro do root(elemento raiz); o HTML*/
+/*as ações abaixo vão afetar todo o HTML*/
+*, :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Poppins', sans-serif; /*ativa uma fonte e suas características ao quiz, por meio do  nome escrito; poppins; + o Url/link acima*/
+  /*abaixo tem agumas regrinhas que também afetam a fonte do texto*/
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*cor de fundo*/
+body 
+{
+  background-color:rgb(184, 37, 135);
+}
+
+/*afeta o main; conteúdo de Main; lá do HTML*/
+main 
+{
+  padding: 15px;
+  max-width: 640px;
+  margin: 0 auto 64px;
+}
+
+header
+{
+  /*margem do topo; preenchimento em baixo; e borda em baixo*/
+  margin-top: 64px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f116e7;
+}
+
+header h1
+{
+  margin-top: 24px;
+  /*font-size controla o tamanho da fonte*/
+  font-size: 30px;
+}
+
+
+
+.quiz-item
+{ 
+  /*margem do topo; borda; e raio da borda (arredondou a borda)*/
+  margin-top: 24px;
+  border: 1px solid #f116e7;
+  border-radius: 20px;
+
+  /*nenhum item/elemento fica fora da área do quiz-item*/
+  overflow: hidden;
+}
+
+#quiz
+{
+  counter-reset: itemQuiz; /*o counter-reset vai iniciar um contador*/
+}
+
+.quiz-item h3:before /*depois o counter-increment, vai imcrementar, ou seja, toda vez que aparecer um h3, ele vai contar: +1 =1..., e por causa do content, vai colocar essa conta no itemQuiz*/   /*ou seja, os números das questões vão aparecer*/
+{
+  counter-increment: itemQuiz;
+  content: counter(itemQuiz);
+
+/*características para aparência dos números*/
+  width: 28px;
+  height: 28px;
+  display: flex;
+  background-color: rgb(248, 49, 205);
+  align-items:; /*nesse caso não é necessário nada, somente o ponto e vírgula, para que o justify funcione e deixe o números alinhados no eixo Y; 0s números não precisam ser alinhados a nada nesse caso*/
+  justify-content: center;
+  border-radius: 40%;
+  flex-shrink: 0;/*se a página ficar muito apertada, o círculo continuará redondo*/
+
+}
+
+.quiz-item h3 
+{
+  /* 1°px é de preenchimento do topo e de baixo; 2° preenchimento é das laterais*/
+  padding: 16px 20px;
+
+  /*os números criados no ".quiz-item h3:before", tem em torno de si um display: flex; abaixo esse display é alinhado as perguntas, com espaço de 12 pixels*/
+  display: flex; 
+  align-items: center;
+  gap: 12px;
+
+  background-color: rgba(216, 37, 216, 0.644);
+}
+
+.quiz-item dl
+{
+padding: 20px 24px;
+
+/*"grid" não fez nada, mas interpretou o "gap"; gap permite colocar espaços, e nesse caso, entre as três opções*/
+display: grid;
+gap: 9px;
+}
+
+.quiz-item dl dt
+{
+  font-size: 14px;
+
+  /*aumenta os espaços entre as opções*/
+  line-height: 24px;
+  /*espaço entre as letras*/
+  letter-spacing: 0;
+
+  /*faz a borda criada em input - abaixo - ficar quadrada e do lado das opções*/
+  display: flex;
+  /*centralizou na mesma altura das opções a borda, e gap colocou um espaço entre as opções e a bolinha*/
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+input
+{
+  /*"all' pega todas as propriedades do input, e com o unset, tira todas essas propriedades*/
+  all: unset;
+
+  /*é feita uma nova bolinha; que ainda é quadrada; com seus tamanhos laterais*/
+  border: 1px solid #f116e7;
+  width: 16px;
+  height: 16px; 
+
+  /*com "border-radius", o quadrado é arrendondado*/
+  border-radius: 50%;
+  flex-shrink: 0;/*se a página ficar muito apertada, a bolinha continuará redonda*/
+
+  /*a bolinha criada no "input:checked:before", é quadrada; se alinha as opções; e com justify..., alinha também no eixo Y, e ficando no centro*/
+  display: flex;
+  align-items: center;
+  justify-content: center;/*justify-content depende de align-items para funcionar*/
+}
+
+/*o checked é "quando o input for clicado"; assim quando clicar em uma das opções a borda vai ficar verde*/
+input:checked
+{
+  border: 1px solid #d341f0;
+}
+
+/*o before permite colocar um elemeto antes de conteúdo; no caso, input no HTML não tem nenhum texto em seu conteúdo*/
+input:checked:before
+{
+  content: "";
+
+  /*abaixo elementos que colocamos no input; com eles aparecerá um círculo dentro das bolinhas quando clicarmos nelas*/
+  /*ela terá 10 pixels de altura e largura, terá a seguinte cor, e será arredondada, pois é um quadrado*/
+  width: 10px;
+  height: 10px;
+  background-color: #d341f0;
+  border-radius: 50%;
+}
+
+
+
+#acertos 
+{
+  text-align: center;
+  background-color: rgb(184, 59, 184);
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 14px;
+}
