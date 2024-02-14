@@ -36,7 +36,7 @@ header
   /*margem do topo; preenchimento em baixo; e borda em baixo*/
   margin-top: 64px;
   padding-bottom: 24px;
-  border-bottom: 4px solid #0a010a;
+  border-bottom: 1px solid #0a010a;
 }
 
 header h1
@@ -52,7 +52,7 @@ header h1
 { 
   /*margem do topo; borda; e raio da borda (arredondou a borda)*/
   margin-top: 24px;
-  border: 4px solid #0a010a;
+  border: 1px solid #0a010a;
   border-radius: 20px;
 
   /*nenhum item/elemento fica fora da área do quiz-item*/
