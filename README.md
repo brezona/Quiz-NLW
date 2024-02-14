@@ -1,5 +1,3 @@
-# QuizJavaScript
-
 TECNOLOGIAS USADAS:
 - HTML
 - CSS
