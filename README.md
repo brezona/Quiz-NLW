@@ -4,9 +4,8 @@ TECNOLOGIAS USADAS:
 - JavaScript
 - GITHUB
 
-<div></div>
 ANOTAÇÕES:
-
+<div></div>
 HTML: mexe com o texto, e sua estrutura.
 CSS: mexe com o designer, como a cor de fundo.
 JAVA SCRIPT: mexe com a funcionalidade da página.
